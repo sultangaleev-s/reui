@@ -594,6 +594,10 @@ a {
         width: 100%;
         height: auto;
     }
+    &__collage-item img{
+        width: 100%;
+        height: auto;
+    }
 
     &__second-section {
         display: flex;
@@ -629,9 +633,14 @@ a {
         gap: 13px;
     }
 
-    &__decor-img {
+    &__decor-item {
         grid-column: span 2;
-        height: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    &__decor-item img{
+        height: auto;
         width: 100%;
     }
 
@@ -656,11 +665,11 @@ a {
             flex: 0 0 40%;
         }
 
-        &__decor-img {
+        &__decor-item {
             grid-column: span 3;
         }
 
-        &__decor-img:last-child {
+        &__decor-item:last-child {
             grid-column: 4/ span 3;
         }
     }
@@ -680,11 +689,11 @@ a {
             padding: 0;
         }
 
-        &__decor-img {
+        &__decor-item {
             grid-column: span 2;
         }
 
-        &__decor-img:last-child {
+        &__decor-item:last-child {
             grid-column: span 2;
         }
     }

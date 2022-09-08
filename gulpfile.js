@@ -38,7 +38,7 @@ export{ svgSprive }
 const mainTasks = app.gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
 
 //построение сценариев выполнения задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server), svgSprive);
 const build = gulp.series(reset, mainTasks, svgSprive);
 const deployZip = gulp.series(reset, mainTasks, svgSprive, zip);
 const deployFtp = gulp.series(reset, mainTasks, svgSprive, ftp);
